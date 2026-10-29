@@ -1,0 +1,39 @@
+test_arbitrary_seller_facts_are_plain_data_only (__main__.TestEnforceClaims.test_arbitrary_seller_facts_are_plain_data_only) ... ok
+test_compatibility_claim_stripped (__main__.TestEnforceClaims.test_compatibility_claim_stripped) ... ok
+test_confirmed_facts_description_stays_nonempty (__main__.TestEnforceClaims.test_confirmed_facts_description_stays_nonempty) ... ok
+test_nationwide_wording_never_suppressed_by_retailer_mention (__main__.TestEnforceClaims.test_nationwide_wording_never_suppressed_by_retailer_mention) ... ok
+test_nutrition_claim_stripped_without_support (__main__.TestEnforceClaims.test_nutrition_claim_stripped_without_support) ... ok
+test_retailer_claim_with_unrelated_seller_fact_stripped (__main__.TestEnforceClaims.test_retailer_claim_with_unrelated_seller_fact_stripped) ... ok
+test_seller_supplied_price_and_size_kept (__main__.TestEnforceClaims.test_seller_supplied_price_and_size_kept) ... ok
+test_size_and_certification_claims_stripped (__main__.TestEnforceClaims.test_size_and_certification_claims_stripped) ... ok
+test_empty_description_gets_safe_minimum (__main__.TestParseCopyFailClosed.test_empty_description_gets_safe_minimum) ... ok
+test_empty_spark_output_falls_back (__main__.TestParseCopyFailClosed.test_empty_spark_output_falls_back) ... ok
+test_marker_missing_with_fabricated_claim_fails_closed (__main__.TestParseCopyFailClosed.test_marker_missing_with_fabricated_claim_fails_closed) ... ok
+test_marker_present_splits_description_and_needs (__main__.TestParseCopyFailClosed.test_marker_present_splits_description_and_needs) ... ok
+test_thai_and_english_share_marker (__main__.TestParseCopyFailClosed.test_thai_and_english_share_marker) ... ok
+test_malformed_spark_output_fails_closed_end_to_end (__main__.TestRunPipelineFallbacks.test_malformed_spark_output_fails_closed_end_to_end) ... ok
+test_non200_spark_response_falls_back (__main__.TestRunPipelineFallbacks.test_non200_spark_response_falls_back) ... ok
+test_no_esc_shortcut_for_model_strings (__main__.TestSafeRendering.test_no_esc_shortcut_for_model_strings) ... /tmp/audit-run/test_guardrail.py:247: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/audit-run/index.html' mode='r' encoding='utf-8'>
+  html = open(os.path.join(HERE, "index.html")).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_process_uses_dom_not_innerhtml_for_model_strings (__main__.TestSafeRendering.test_process_uses_dom_not_innerhtml_for_model_strings) ... /tmp/audit-run/test_guardrail.py:239: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/audit-run/index.html' mode='r' encoding='utf-8'>
+  html = open(os.path.join(HERE, "index.html")).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_seller_note_says_match_is_not_verified (__main__.TestSafeRendering.test_seller_note_says_match_is_not_verified) ... /tmp/audit-run/test_guardrail.py:255: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/audit-run/index.html' mode='r' encoding='utf-8'>
+  html = open(os.path.join(HERE, "index.html")).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_health_benefit_cures_tiredness_stripped (__main__.TestValueMatching.test_health_benefit_cures_tiredness_stripped) ... ok
+test_health_benefit_never_seller_exempt (__main__.TestValueMatching.test_health_benefit_never_seller_exempt) ... ok
+test_matching_price_and_size_kept (__main__.TestValueMatching.test_matching_price_and_size_kept) ... ok
+test_mismatched_price_and_size_stripped (__main__.TestValueMatching.test_mismatched_price_and_size_stripped) ... ok
+test_partial_price_match_still_stripped (__main__.TestValueMatching.test_partial_price_match_still_stripped) ... ok
+test_price_without_seller_price_is_unverified (__main__.TestValueMatching.test_price_without_seller_price_is_unverified) ... ok
+test_size_unit_conversion_match_kept (__main__.TestValueMatching.test_size_unit_conversion_match_kept) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.064s
+
+OK
