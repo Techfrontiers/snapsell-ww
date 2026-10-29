@@ -1,0 +1,43 @@
+test_ml_conflict_stripped (__main__.TestMlUnit.test_ml_conflict_stripped) ... FAIL
+test_ml_matching_kept (__main__.TestMlUnit.test_ml_matching_kept) ... ok
+test_ml_without_dot_stripped (__main__.TestMlUnit.test_ml_without_dot_stripped) ... FAIL
+test_ml_without_seller_facts_stripped (__main__.TestMlUnit.test_ml_without_seller_facts_stripped) ... FAIL
+test_no_size_text_unaffected (__main__.TestMlUnit.test_no_size_text_unaffected) ... ok
+
+======================================================================
+FAIL: test_ml_conflict_stripped (__main__.TestMlUnit.test_ml_conflict_stripped)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/fix-run/regress_ml.py", line 17, in test_ml_conflict_stripped
+    self.assertEqual(safe, server.MIN_DESC["th"])
+AssertionError: 'ขนาด 500 มล.' != 'สินค้าตามในรูป.'
+- ขนาด 500 มล.
++ สินค้าตามในรูป.
+
+
+======================================================================
+FAIL: test_ml_without_dot_stripped (__main__.TestMlUnit.test_ml_without_dot_stripped)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/fix-run/regress_ml.py", line 33, in test_ml_without_dot_stripped
+    self.assertEqual(safe, server.MIN_DESC["th"])
+AssertionError: 'ขนาด 500 มล' != 'สินค้าตามในรูป.'
+- ขนาด 500 มล
++ สินค้าตามในรูป.
+
+
+======================================================================
+FAIL: test_ml_without_seller_facts_stripped (__main__.TestMlUnit.test_ml_without_seller_facts_stripped)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/fix-run/regress_ml.py", line 25, in test_ml_without_seller_facts_stripped
+    self.assertEqual(safe, server.MIN_DESC["th"])
+AssertionError: 'ขนาด 500 มล.' != 'สินค้าตามในรูป.'
+- ขนาด 500 มล.
++ สินค้าตามในรูป.
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+FAILED (failures=3)
