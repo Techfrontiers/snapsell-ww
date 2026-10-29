@@ -1,0 +1,4 @@
+PASS | select A -> preview url1, nothing revoked | src=blob:fake-1
+PASS | select B -> preview url2, revoked=[url1] | revoked=["blob:fake-1"]
+PASS | drop C -> files replaced, preview url3, revoked=[url1,url2] | src=blob:fake-3
+PREVIEW OBJECT-URL TEST: PASS
