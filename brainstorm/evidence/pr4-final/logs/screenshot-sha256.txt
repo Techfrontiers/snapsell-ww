@@ -1,0 +1,4 @@
+81020fa65f1dda8e806b9f03d0ce540f9320b0c08120114e1bdb00eb3afec9e1  /tmp/audit-shot/audit-desktop-1440.png
+eb76bb84cd7e1d4ae39eff11c807d74e0fa905a8e8007a552c0755286399e05e  /tmp/audit-shot/audit-mobile-390.png
+545712a7951961bf58fd714f8a1b91df06f804dd4e3034e937b7f3c428714a43  /tmp/audit-shot/audit-en-1440.png
+1a6238e74f2ae9803dbb85d0246c55a91f6e6ed7fd7111f8dfd1d3b85faf5d06  /tmp/audit-shot/audit-full-1440.png
