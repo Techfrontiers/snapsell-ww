@@ -1,0 +1,14 @@
+PASS | case2-vague-no-marker-fail-closed | desc='สินค้าตามในรูป.' needs=['แยกข้อเท็จจริงที่ยืนยันได้กับที่ยังยืนยันไม่ได้ไม่ออก — ตรวจสอบก่อนลงขาย']
+PASS | case2-empty-output-fail-closed | diag='empty model output'
+PASS | case2-marker-empty-desc-fallback | desc='สินค้าตามในรูป.' needs=['ราคา?']
+PASS | case4-garbage-fail-closed | raw kept only as diagnostic
+PASS | case4-wellformed-parses | desc='ชื่อสินค้า\nรายละเอียดดีมาก'
+PASS | case5-invented-place-price-stripped | desc='สินค้าตามในรูป.' removed=['ตัดออกเพื่อยืนยัน (price-unverified): อร่อยมาก ซื้อได้ที่ 7-Eleven ราคา 999 บาท']
+PASS | case5-invented-nutrition-stripped | desc='สินค้าตามในรูป.' removed=['ตัดออกเพื่อยืนยัน (nutrition): มีวิตามินซีสูง ช่วยต้านอนุมูลอิสระ']
+PASS | case5-invented-availability-stripped | desc='สินค้าตามในรูป.' removed=['ตัดออกเพื่อยืนยัน (current-availability): พร้อมส่งวันนี้ มีของในสต็อก']
+PASS | case5-matching-seller-value-kept | desc='ราคา 35 บาท'
+PASS | case6-conflict-price-stripped | desc='สินค้าตามในรูป.' removed=['ตัดออกเพื่อยืนยัน (price-mismatch): ราคา 50 บาท']
+FAIL | case6-conflict-size-stripped | desc='ขนาด 500 มล.' removed=[]
+PASS | case6-matching-size-kept | desc='ขนาด 500 มล.'
+
+AUDIT TESTS: 11 passed, 1 failed
