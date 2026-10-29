@@ -1,0 +1,14 @@
+Section 4 evidence: real server.py static serving + error paths
+Date: 2026-10-29 Bangkok. Server: /tmp/audit-demo/server.py (fresh branch copy, SHA-locked),
+started as: python3 server.py 8902  (binds 127.0.0.1 only, serves its own directory).
+Method: REAL (live local server, curl) — no mocks.
+
+GET / -> 200, 41906 bytes (== branch demo/index.html size)
+GET /tailwind.css -> 200, 14270 bytes (== branch demo/tailwind.css size)
+GET /sweetalert2.all.min.js -> 200, 79150 bytes (== branch vendored file size)
+GET /assets/before3.jpg -> 200, 211811 bytes
+GET /assets/after3.jpg -> 200, 267458 bytes
+GET /nonexistent.txt -> 404 (correct)
+POST /api/process (no photo field) -> 200 {"ok": false, "error": "ไม่พบไฟล์รูป"}
+POST /api/other (wrong path) -> 404 (correct)
+Server stopped after tests (fuser -k 8902/tcp).
