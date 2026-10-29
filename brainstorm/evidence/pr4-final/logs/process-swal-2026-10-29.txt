@@ -1,0 +1,14 @@
+PASS | ok-needs: fetch called once with photo/lang/facts | ["photo","lang","facts"]
+PASS | ok-needs: card appended with copy text | cards=1
+PASS | ok-needs: needs item rendered in card | needs found
+PASS | ok-needs: Swal loading then warning modal, no toast | ["?","loading","warning"]
+PASS | ok-needs: status = done text | เสร็จแล้ว — การ์ดอยู่ด้านบน
+PASS | ok-clean: success toast fired | [null,null,"success"]
+PASS | ok-clean: no warning modal | ok
+PASS | notok: Swal error with boom | ["กำลังตัดรูปสินค้า… วาดรูปสตูดิโอ… เขียนแคปชัน… รอสักครู่",null,"ทำไม่สำเร็จ: boom"]
+PASS | notok: status fail + error class | ทำไม่สำเร็จ: boom
+PASS | reject: Swal error serverFail | ok
+PASS | reject: status serverFail + error class | ต่อเซิร์ฟเวอร์เดโมไม่ได้ — เปิดผ่าน pyth
+PASS | nofile: warning fired, fetch not called | fetch=0
+PASS | no-Swal fallback: card + done, no crash | cards=1
+PROCESS+SWAL TEST: PASS
