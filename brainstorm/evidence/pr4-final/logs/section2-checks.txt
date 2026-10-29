@@ -1,0 +1,42 @@
+main demo/server.py blob: 024c8753f981
+main demo/test_guardrail.py blob: 80b491ec31ad
+assets fetched: 10
+--- 1. CDN removal ---
+cdn.tailwindcss.com present: False
+jsdelivr present: False
+inline tailwind.config present: False
+href="tailwind.css": True
+src="sweetalert2.all.min.js": True
+--- 2. Swal version ---
+header v11.26.25: True
+MIT header: True
+swal bytes: 79150
+--- 3. external deps ---
+all src/href refs: ['#gallery', '#live', '#upload', 'assets/after1.jpg', 'assets/after2.jpg', 'assets/after3.jpg', 'assets/after4.jpg', 'assets/after5.jpg', 'assets/before1.jpg', 'assets/before2.jpg', 'assets/before3.jpg', 'assets/before4.jpg', 'assets/before5.jpg', 'sweetalert2.all.min.js', 'tailwind.css']
+external refs: NONE
+tailwind.css url( refs: NONE
+https strings in swal min: ['https://sweetalert2.github.io/']
+--- 4. refs exist on disk ---
+  #gallery: MISSING
+  #live: MISSING
+  #upload: MISSING
+  assets/after1.jpg: EXISTS
+  assets/after2.jpg: EXISTS
+  assets/after3.jpg: EXISTS
+  assets/after4.jpg: EXISTS
+  assets/after5.jpg: EXISTS
+  assets/before1.jpg: EXISTS
+  assets/before2.jpg: EXISTS
+  assets/before3.jpg: EXISTS
+  assets/before4.jpg: EXISTS
+  assets/before5.jpg: EXISTS
+  sweetalert2.all.min.js: EXISTS
+  tailwind.css: EXISTS
+--- 6. secret/PII scan (PR files + backend) ---
+  index.html: CLEAN
+  tailwind.css: CLEAN
+  tailwind.config.js: CLEAN
+  tailwind-input.css: CLEAN
+  sweetalert2.all.min.js: CLEAN
+  server.py: CLEAN
+  test_guardrail.py: CLEAN
