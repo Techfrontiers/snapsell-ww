@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "concept": "product",
+  "box": [
+    128,
+    808,
+    739,
+    1682,
+    921,
+    2048
+  ],
+  "studio_b64": "<3904080 chars base64>",
+  "copy": "สินค้าตามในรูป.",
+  "description": "สินค้าตามในรูป.",
+  "needs_confirmation": [
+    "แยกข้อเท็จจริงที่ยืนยันได้กับที่ยังยืนยันไม่ได้ไม่ออก — ตรวจสอบก่อนลงขาย"
+  ],
+  "diagnostic_untrusted": "empty model output",
+  "seller_facts_used": false
+}
